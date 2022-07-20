@@ -2,10 +2,10 @@
 /*-----------------
 * [Master Stylesheet]
 *
-* Theme    : Justin
-* Version  : 1.0
+* Theme    : moralesfrancisco
+* Version  : 3.0.3
 * Author   : beingeorge
-* Support  : hello@beingeorge.com
+* Support  : faranevangelista72@gmail.com
 * 
 ------------------*/
 
@@ -1340,10 +1340,10 @@ a {
     .port-menu li {
         margin: 7px 7px;
     }
-    .port-card {
+    /*.port-card {
         width: 100%;
         margin: 15px 0px;
-    }
+    }*/
 }
 @media (min-width: 380px) and (max-width: 575px) {
     .port-part .container {
