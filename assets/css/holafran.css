@@ -2707,6 +2707,46 @@ h4.media-heading {
 }
 
 /* ---------------------------------------------- 
+* 14. BUTONS WHATS MESSENGER
+/* ---------------------------------------------- */
+.btn-call-me{
+    
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    right: 25px;
+    background-color: #25d366;
+    color: var(--white);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    transition: all 300ms ease;
+    z-index: 500;
+}
+.btn-whats{
+    bottom: 20px;
+    background-color: #25d366;
+    color: var(--white);
+}
+.btn-whats:hover{
+    background-color: var(--white);
+    color: #25d366;
+}
+.btn-messenger{
+    bottom: 100px;
+    background-color: #009bf0;
+    color: var(--white);
+}
+.btn-messenger:hover{
+    background-color: var(--white);
+    color: #009bf0;
+}
+/* ---------------------------------------------- 
+* End butonns 
+/* ---------------------------------------------- */
+/* ---------------------------------------------- 
 * 14. Footer
 /* ---------------------------------------------- */
 
