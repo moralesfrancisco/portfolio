@@ -1345,6 +1345,9 @@ a {
         padding: 0px 15px;
         margin: 10px auto;
     }
+    .size {
+        width: 100%; 
+    }
 }
 @media (min-width: 380px) and (max-width: 575px) {
     .port-part .container {
