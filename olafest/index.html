@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!--=============== basic  ===============-->
+		<title>OlaFest - Evento musical</title>
+		<meta http-equiv="x-ua-compatible" content="ie-edge"> <!-- modo de compatibilidad con ie -->
+		<meta charset="utf-8"> <!-- codificacion de caracteres -->
+		<meta name="keywords" content="Acapulco, Evento musical, Festival, Concierto, "> <!-- palabras claves para motores de busqueda -->
+		<meta name="description" content="Acapulco, Evento musical, Festival, Concierto,"> <!-- descripcion para la web -->
+		<meta name="author" content="Morales Francisco- @moralesfranciscoe"> <!-- autor de la web -->
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0"> <!-- configuracion de la ventana grafica para distintos dispositivos -->
+		<!--=============== css  ===============-->	
+		<link rel="stylesheet" href="assets/css/olafest.css"><!-- olafest style Css -->
+		<!--=============== favicons ===============-->
+		<link rel="shortcut icon" href="assets/images/fav-icon.ico">
+
+		<!-- Custom Js -->
+	</head>
+
+	<body>
+
+		<!-- START: MENU -->
+		
+		<nav  id="menu">
+			<div class="container_menu">
+				<input id="responsive-menu" type="checkbox">
+				<label for="responsive-menu">
+					<span id="menu-icon"></span>
+					<div class="contenedor_logos">
+						<div class="logo_forum">
+							<a href="index.html" class="logo">
+								<img id="logo_forum" class="img_logo" src="assets/images/logo.png" alt="img">
+							</a>
+						</div>
+						<div class="countdown">
+							<div class="defaultCountdown">
+								<span>Inicia en:
+								</span><span id="defaultCountdown">
+									<span id="days"></span> Días - 
+									<span id="hours"></span> hr - 
+									<span id="minutes"></span> min
+									<span id="seconds"></span> seg
+								</span> 
+							</div>
+							<a href="https://www.ticketmaster.com.mx/" class="btn_main">
+								<!-- <i class=""></i> -->
+								<span class="text_btn">Compra tus boletos</span>
+								<div class="img_ola"></div>
+							</a>
+						</div>
+						<div class="logo_olafest_menu">
+							<a href="index.html" class="logo">
+								<img id="logo_olafest" class="img_logo" src="assets/images/logo_forum_mundo_imperial.png" alt="img">
+							</a>
+						</div>
+					</div>
+				</label>
+				<div id="overlay"></div>
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#cartelera">Cartelera</a></li>
+					<li><a href="#promociones">Promociones</a></li>
+					<li><a href="#actividades">Actividades</a></li>
+					<li><a href="ubicacion.html">Como Llegar</a></li>
+					<li><a href="informacion.html">Información y lineamientos</a></li>
+					<li><a href="faqs.html">Preguntas frecuentes</a></li>
+				</ul>
+				<ul id="social-media">
+					<li>
+						<a href="https://dribbble.com/erinesullivan">
+							<i class="fab fa-dribbble"></i>
+							<span class="screen-reader-text">Dribbble</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://codepen.io/erinesullivan/">
+							<i class="fab fa-codepen"></i>
+							<span class="screen-reader-text">CodePen</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/erin_e_sullivan">
+							<i class="fab fa-twitter"></i>
+							<span class="screen-reader-text">Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/erinesullivan1">
+							<i class="fab fa-linkedin"></i>
+							<span class="screen-reader-text">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/erin_e_sullivan/">
+							<i class="fab fa-instagram"></i>
+							<span class="screen-reader-text">Instagram</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- END: MENU -->
+
+		<!-- START: SLIDER VIDEO -->
+		<section>
+			<div class="container_video">
+				<video autoplay muted controls class="box2" id="box2" src="assets/videos/Concert - 1630.mp4"></video> 
+				<video autoplay muted controls class="box1" id="box1" src="assets/videos/olafest.mp4"></video> 
+			</div>
+			<!-- <h1 id="debug" style= "background: blue; position:absolute; width:50%; top:25%; right:25%; z-index: 100;"></h1> -->
+			<script>
+			
+			
+				var box1 = document.getElementById('box1');
+				var box2 = document.getElementById('box2');
+				var box3 = document.getElementById('box3');
+			
+				box1.onended = function () {
+					box2.play();
+					box1.style.opacity=0;
+					box2.style.opacity=1;
+				}
+				box2.onended = function () {
+					box3.play();
+					box2.style.opacity=0;
+					box3.style.opacity=1;
+				}
+				box3.onended = function () {
+					box1.play();
+					box3.style.opacity=0;
+					box1.style.opacity=1;
+				}
+			
+			</script>
+		</section>
+		<!-- END: SLIDER VIDEO -->
+
+		<!-- START: ALL CONTEN -->
+		<main class="cartelera" id="cartelera">
+			
+			<!-- <div class="bgimg-1">
+			</div> -->
+			  
+
+			<div class="bgimg-2" style="cursor: default;">
+				
+				<!-- START: CARTELERA -->
+				<div class="title1_container titulo-cartelera">
+					<h1 class="title_1 borde titulo-cartelera1">Nuestra Cartelera</h1>
+					<h1 class="title_1 title_ola titulo-cartelera1">Nuestra Cartelera</h1>
+				</div>
+
+				
+				<section class="slider_cartelera">
+					<div class="card">
+			
+						<div class="card-content">
+							<img src="assets/images/misc/arrolladora.jpg" alt="" class="card-img">
+							<h1 class="card-title">La Arrolladora Banda El Limón</h1>
+							<div class="card-body">
+								<!-- <div class="card-star">
+									<span class="star">&#9733;</span>
+									<span class="rating-value">4.5</span>
+								</div> -->
+								<p class="card-price">&#128197; Noviembre <span>4</span></p>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-success">Comprar</button>
+								<button class="btn btn-border add-to-cart">Detalles</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<img src="assets/images/misc/alejandra-guzman.jpg" alt="" class="card-img">
+							<h1 class="card-title">Alejandra Guzmán</h1>
+							<div class="card-body">
+								<p class="card-price">&#128197; Noviembre <span>5</span></p>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-success">Comprar</button>
+								<button class="btn btn-border add-to-cart">Detalles</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<img src="assets/images/misc/La-Adictiva.jpg" alt="" class="card-img">
+							<h1 class="card-title">La Adictiva</h1>
+							<div class="card-body">
+								<p class="card-price">&#128197; Noviembre <span>11</span></p>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-success">Comprar</button>
+								<button class="btn btn-border add-to-cart">Detalles</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<img src="assets/images/misc/piso21.jpg" alt="" class="card-img">
+							<h1 class="card-title">Piso 21 / Mario Bautista</h1>
+							<div class="card-body">
+								<p class="card-price">&#128197; Noviembre <span>12</span></p>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-success">Comprar</button>
+								<button class="btn btn-border add-to-cart">Detalles</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<img src="assets/images/misc/90spoptours.jpg" alt="" class="card-img">
+							<h1 class="card-title">90's Pop Tour</h1>
+							<div class="card-body">
+								<p class="card-price">&#128197; Noviembre <span>19</span></p>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-success">Comprar</button>
+								<button class="btn btn-border add-to-cart">Detalles</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<img src="assets/images/misc/nicnkyjam.jpg" alt="" class="card-img">
+							<h1 class="card-title">Jnicky jam</h1>
+							<div class="card-body">
+								<p class="card-price">&#128197; Noviembre <span>20</span></p>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-success">Comprar</button>
+								<button class="btn btn-border add-to-cart">Detalles</button>
+							</div>
+						</div>
+					</div>
+			
+					<span class="arrow left">&#129120;</span>
+					<span class="arrow right">&#129122;</span>
+			
+				</section>
+
+				
+				<!-- START: PROMOCIONES -->
+				<div class="title1_container titulo_promo" >
+					<h1  class="title_1 borde titulo_promo1">Nuestras Promociones</h1>
+					<h1  class="title_1 title_ola titulo_promo1">Nuestras Promociones</h1>
+				</div>
+				
+				
+				<div class="product-card">
+					<div class="left-column">
+						<span class="share"><i class="fas fa-share-alt"></i></span>
+						<span class="heart"><i class="fas fa-heart"></i></span>
+						<img src="./assets/images/promociones/promocion2.jpg" alt="backpack">
+					</div>
+					<div class="right-column">
+						<!-- <img src="./images/logo.png" alt="logo" class="logo"> -->
+						<div class="product-name">
+							<h1>Alejandra Guzmán</h1>
+							<p>5 de Noviembre</p>
+						</div>
+						<div class="description">
+							<p>
+								" Acceda a nuestra promoción, ALEJANDRA GUZMAN #ViveLaExperiencia”, reservando directo dos noches mínimas de estancia en Hotel Princess Mundo Imperial o Palacio Mundo imperial, en categoría estándar, en plan sin alimentos. "
+							</p>
+						</div>
+						<div>
+							<a href="https://www.ticketmaster.com.mx/" class="btn_main btn_activo">
+								<!-- <i class=""></i> -->
+								<span class="text_btn">Compra tus boletos</span>
+								<div class="img_ola"></div>
+							</a>
+							<a href="https://www.ticketmaster.com.mx/" class="btn_main btn_inactivo-promo">
+								<!-- <i class=""></i> -->
+								<span class="text_btn">Detalles</span>
+								<div class="img_ola"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				
+
+				
+				<!-- START: ACTIVIDADES -->
+				<div class="contenedor_actividades">
+
+					
+					<div class="title1_container titulo_actividades" >
+						<h1 style=" margin-bottom: 60px;" class="title_1 borde">Nuestras Actividades</h1>
+						<h1 style=" margin-bottom: 60px;" class="title_1 title_ola">Nuestras Actividades</h1>
+					</div>
+
+					<p style="visibility: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est beatae accusantium iusto velit consectetur fugit, praesentium, rem sunt sit nemo nisi sequi, quisquam officia dolorem! Maxime nam neque natus rerum.</p>
+					<!-- END: promociones -->
+
+				
+					<div class="slider-contenedor">
+						<section class="contenido-slider">
+							<div>
+								<h2>Lucha Libre.</h2>
+								<p>Nuestras instalaciones de tenis cuentan con un estadio y ocho canchas profesionales - cinco con superficies "Laykold" y tres con césped sintético. Puedes tomar clases y organizar torneos con el instructor. Se requiere reservación.</p>
+								<a href="#">Ver Detalles</a>
+							</div>
+							<img src="assets/images/actividades/cancha_tenis.jpg" alt="">
+			
+						</section>
+						<section class="contenido-slider">
+							<div>
+								<h2>Comedia.</h2>
+								<a href="#">Ver Detalles</a>
+								<p>tiene cinco piscinas (sin salvavidas), incluyendo dos con barras de piscina, una piscina de agua salada y una piscina tropical estilo río con cascadas y una laguna. Los huéspedes también disfrutan de acceso a las tres piscinas de agua dulce y a la piscina para niños, que se encuentra al lado.</p>
+							</div>
+							<img src="assets/images/actividades/piscina.jpg" alt="">
+				
+						</section>
+						<section class="contenido-slider">
+							<div>
+								<h2>Rueda de la fortuna.</h2>
+								<a href="#">Ver Detalles</a>
+								<p> Enclavado entre dunas de arena y rodeado de un exuberante santuario tropical, el campo tiene amplios estanques y enormes recintos que enmarcan estos 18 hoyos únicos. Tenemos tarifas preferenciales para grupos.</p>
+							</div>
+							<img src="assets/images/actividades/cancha_golf.jpg" alt="">
+			
+						</section>
+						<section class="contenido-slider">
+							<div>
+								<h2>Street Art.</h2>
+								<a href="#">Ver Detalles</a>
+								<p>Esta instalación de última generación, de 490 metros cuadrados, cuenta con máquinas cardiovasculares y pesas libres, junto con comodidades como toallas, periódicos diarios gratuitos, agua corriente y agua infundida con un toque de fruta, clorofila o miel para recuperar la energía.</p>
+							</div>
+							<img src="assets/images/actividades/gimnasio.jpg" alt="">
+				
+						</section>
+					</div>
+				
+
+				</div>
+
+				
+			</div>
+
+
+			<div class="bgimg-3">
+				<!-- START: PATROCINADORES -->
+				<div class="title1_container titulo-patrocinadores" >
+					<h1 style=" margin-bottom: 30px;" class="title_1 borde titulo-patrocinadores1">Nuestros Patrocinadores</h1>
+					<h1 style=" margin-bottom: 30px;" class="title_1 title_ola titulo-patrocinadores2">Nuestros Patrocinadores</h1>
+				</div>
+				<div class="container_patrocinadores">
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-1.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-2.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-3.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-4.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-5.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-6.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-7.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-8.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-9.png" alt="">
+					</div>
+					<div class="box_patrocinadores">
+						<img src="assets/images/sponsors/logo-10.png" alt="">
+					</div>
+				</div>
+
+
+
+				<p style="visibility: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit maiores voluptas perspiciatis in vel itaque totam vitae, labore, odio assumenda sit fuga laboriosam perferendis ab, error consectetur. Dolorum, consequatur.
+				Commodi eaque hic voluptate cupiditate suscipit natus facere mollitia magni ab expedita, fugit quos, eum accusantium, dicta sed numquam aliquam eius. Doloribus, quia. Sunt doloremque, quia iure officia enim nulla?
+				Fugit earum porro dolore nostrum error, delectus, odit repellat odio exercitationem fuga quasi molestias aperiam deleniti ex veritatis totam, beatae accusantium voluptatibus. Debitis cupiditate placeat error modi nesciunt molestias officia.</p>
+				
+
+				
+
+
+				
+
+				<footer>
+
+					<div class="container__footer">
+						<div class="box__footer">
+							<div class="logo">
+								<img src="Images/logo-magtimus.png" alt="">
+							</div>
+							<div class="terms">
+								<p>OlaFest: Un festival que convertirá el mes de noviembre, en tres fines de semana de música recibiendo visitantes tanto locales como nacionales.</p>
+							</div>
+						</div>
+						<div class="box__footer">
+							<h2>Datos de contacto</h2>
+							<address class="">
+								<span><i class=""></i>Boulevard de las Naciones y Paseo de los Manglares, Riviera Diamante Acapulco. México.</span>
+								<br><span><i class=""></i>800 90 27362 </span>
+								<br><span><i class=""></i><a href="mailto:contact@example.com">info@arenagnpseguros.com   </a></span>
+							</address>
+						</div>
+			
+						<div class="box__footer">
+							<h2>Enlaces rápidos</h2>
+							<a href="#">¿Como Llegar?</a>
+							<a href="#">Actividades</a>
+							<a href="#">Información y lineamientos</a>
+							<a href="#">Preguntas frecuentes</a>              
+						</div>
+			
+			
+					</div>
+			
+					<div class="box__copyright">
+						<hr>
+						<p>© Copyright 2022 <b>OlaFest</b></p>
+					</div>
+				</footer>
+			</div>
+
+			<!-- <div class="bgimg-3">
+				
+			</div>
+			  
+			  
+			<div class="bgimg-1">
+			</div> -->
+		</main>
+		<!-- START: FOOTER -->
+	
+
+
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', () => { 
+	
+			//===
+			// VARIABLES
+			//===
+			const DATE_TARGET = new Date('11/04/2022 0:01 AM');
+			// DOM for render
+			const SPAN_DAYS = document.querySelector('span#days');
+			const SPAN_HOURS = document.querySelector('span#hours');
+			const SPAN_MINUTES = document.querySelector('span#minutes');
+			const SPAN_SECONDS = document.querySelector('span#seconds');
+			// Milliseconds for the calculations
+			const MILLISECONDS_OF_A_SECOND = 1000;
+			const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+			const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+			const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+	
+			//===
+			// FUNCTIONS
+			//===
+	
+			/**
+			 * Method that updates the countdown and the sample
+			 */
+			function updateCountdown() {
+				// Calcs
+				const NOW = new Date()
+				const DURATION = DATE_TARGET - NOW;
+				const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+				const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+				const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+				const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+				// Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+	
+				// Render
+				SPAN_DAYS.textContent = REMAINING_DAYS;
+				SPAN_HOURS.textContent = REMAINING_HOURS;
+				SPAN_MINUTES.textContent = REMAINING_MINUTES;
+				SPAN_SECONDS.textContent = REMAINING_SECONDS;
+			}
+	
+			//===
+			// INIT
+			//===
+			updateCountdown();
+			// Refresh every second
+			setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+		});
+		</script>
+
+
+
+		<script src="assets/js/olafest.js"></script>
+	</body>
+</html>
