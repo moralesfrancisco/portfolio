@@ -130,7 +130,7 @@
 						//===
 						// VARIABLES
 						//===
-						const DATE_TARGET = new Date('11/04/2022 0:01 AM');
+						const DATE_TARGET = new Date('06/11/2025 17:00 AM');
 						// DOM for render
 						const SPAN_DAYS = document.querySelector('span#dias');
 						const SPAN_HOURS = document.querySelector('span#horas');
@@ -157,7 +157,7 @@
 							const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
 							const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
 							const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
-							// Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+							
 				
 							// Render
 							SPAN_DAYS.textContent = REMAINING_DAYS;
